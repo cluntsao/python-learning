@@ -9,7 +9,10 @@ def fibonacci(n):
         # using simultaneous assignment
         a, b = b, a + b
 
-
-if __name__ == '__main__':
+def main():
     print([i for i in fibonacci(10)])
     print([i for i in fibonacci(20)])
+
+
+if __name__ == '__main__':
+    main()
