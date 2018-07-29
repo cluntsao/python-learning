@@ -1,3 +1,5 @@
+import random
+
 def main():
     arr = [1, 2, 3, 4, 5, 6]
     
@@ -39,6 +41,8 @@ def main():
     print("========================")
     for x, y in [(7, 2), (5, 8), (6, 4)]:
         print(x, y)
+
+
 
     
 
