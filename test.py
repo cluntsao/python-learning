@@ -28,6 +28,18 @@ def main():
         for k in range(1, n+1):
             if k % 2 == 0:
                 yield k
+
+    # Fast if else
+    param = 1 if 3 > 0 else 6
+    print(param)
+    
+    # packing & unpacking
+    a, b = divmod(7, 2)
+    print(a, b)
+    print("========================")
+    for x, y in [(7, 2), (5, 8), (6, 4)]:
+        print(x, y)
+
     
 
 

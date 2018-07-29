@@ -5,9 +5,11 @@ def main():
         b = 1
         for _ in range(n):
             yield a
-            future = a + b
+            ''''future = a + b
             a = b
-            b = future
+            b = future'''
+            # using simultaneous assignment
+            a, b = b, a + b
 
     
     print([i for i in fibonacci(10)])
