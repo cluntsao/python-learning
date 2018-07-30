@@ -55,8 +55,7 @@ class CreditCard:
     def make_payment(self, amount):
         self._balance -= amount
 
-
-if __name__ == '__main__':
+def main():
     wallet = list()
     wallet.append(CreditCard('John Doe', '1st Bank', '5391 0375 9387 5309', 2500))
     wallet.append(CreditCard('John Doe', '1st Bank', '5391 0375 9387 5309', 3500))
@@ -64,6 +63,5 @@ if __name__ == '__main__':
 
     print(wallet[0].get_account())
 
-    a = 1
-    b = 2
-    print(a.__add__(b))
+if __name__ == '__main__':
+    main()
