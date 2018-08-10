@@ -30,7 +30,8 @@ class _DoubleLinkedBase:
         return newest
 
     def _delete_node(self, node):
-        node._prev._next = node._next._prev
+        node._prev._next = node._next
+        node._next._prev = node._prev
         self._size -= 1
         element = node._element
         node._prev = node._next = node._element = None
